@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "136",
+      "name": "Sk Sohail",
+      "email": "sksohail44451@gmail.com",
+      "phone": "7735548481",
+      "address": {
+        "hname": "123",
+        "street": "rekabibazar",
+        "city": "jajpur town",
+        "zipcode": "755009"
+      },
+      "company": {
+        "companyname": "Talentelgia",
+        "role": "customer",
+        "companywebsite": "https://Talentelgia.com"
+      }
+    }
+  ]
+}
