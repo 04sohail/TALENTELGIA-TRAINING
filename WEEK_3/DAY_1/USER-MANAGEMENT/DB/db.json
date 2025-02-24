@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": "836",
+      "name": "sk sohail",
+      "email": "sksohail44451@gmail.com",
+      "phone": "7735548481",
+      "address": {
+        "hname": "123123",
+        "street": "rekabibazar",
+        "city": "jajpur town",
+        "zipcode": "755009"
+      },
+      "company": {
+        "companyname": "talentelgia",
+        "role": "admin",
+        "companywebsite": "https://talentelgia.com"
+      }
+    },
+    {
+      "id": "838",
+      "name": "oiuwefiwuegfiuwegf",
+      "email": "woefbiuwbefiu@gmail.com",
+      "phone": "7735548481",
+      "address": {
+        "hname": "787887",
+        "street": "weoufvueq",
+        "city": "ouwebfiuweb",
+        "zipcode": "755009"
+      },
+      "company": {
+        "companyname": "talentelgia",
+        "role": "customer",
+        "companywebsite": "https://talentelgia.com"
+      }
+    }
+  ]
+}
