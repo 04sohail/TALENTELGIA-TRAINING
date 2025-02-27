@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": "927",
+      "first_name": "oisndvio",
+      "last_name": "osdof",
+      "email": "oivnoino@gmail.com",
+      "phone": "8949849848",
+      "address": {
+        "hname": "wojefbiwu",
+        "street": "iwuebgi",
+        "city": "iwuebfi",
+        "pincode": "181919"
+      },
+      "company": {
+        "companyname": "owenfoiwe",
+        "role": "customer",
+        "companywebsite": "oiewoiwg.com"
+      },
+      "user_password": {
+        "password": "ewifw@7J",
+        "confirmpassword": "ewifw@7J"
+      }
+    },
+    {
+      "id": "484",
+      "first_name": "weiufb",
+      "last_name": "wiuebf",
+      "email": "weiufb@gmail.com",
+      "phone": "9728484848",
+      "address": {
+        "hname": "woeubf",
+        "street": "wiuebfi",
+        "city": "iweufb",
+        "pincode": "555555"
+      },
+      "company": {
+        "companyname": "iuwebfiu",
+        "role": "super-admin",
+        "companywebsite": "wieufbwuief.com"
+      },
+      "user_password": {
+        "password": "@Sksaroo19",
+        "confirmpassword": "@Sksaroo19"
+      }
+    },
+    {
+      "id": "1298",
+      "UId": "1740556065822",
+      "first_name": "sk",
+      "last_name": "sohail",
+      "email": "sksohail@gmail.com",
+      "phone": "7894894848",
+      "address": {
+        "hname": "123/456-789",
+        "street": "rekabibazar",
+        "city": "jajpur town",
+        "pincode": "755009"
+      },
+      "company": {
+        "companyname": "talentelgia",
+        "role": "customer",
+        "companywebsite": "talentelgia.com"
+      },
+      "user_password": {
+        "password": "@Sksaroo19",
+        "confirmpassword": "@Sksaroo19"
+      }
+    },
+    {
+      "id": "0e4e",
+      "UId": "1740571157346",
+      "first_name": "SK",
+      "last_name": "SAroo",
+      "email": "sksaroo@gmail.com",
+      "phone": "7758848558",
+      "address": {
+        "hname": "2634",
+        "street": "wouebfiu",
+        "city": "wieufbwiu",
+        "pincode": "416161"
+      },
+      "company": {
+        "companyname": "weoifinweouf",
+        "role": "super-admin",
+        "companywebsite": "ouwebfouwebfuowef.com"
+      },
+      "user_password": {
+        "password": "@Sksaroo198",
+        "confirmpassword": "@Sksaroo198"
+      }
+    }
+  ]
+}

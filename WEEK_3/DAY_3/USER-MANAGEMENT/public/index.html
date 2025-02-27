@@ -90,84 +90,81 @@
       data-keyboard="false"
     >
       <div class="modal-dialog">
-      <div class="modal-content">
-        <form id="addForm" >
-        <div class="modal-header">
-          <h4 class="modal-title">Add Employee</h4>
-          <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-hidden="true"
-          >
-          &times;
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-row">
-          <div class="col">
-            <div class="addFormLabel">
-            <label>First Name</label>
-            <small class="text-danger fname-required">*</small>
+        <div class="modal-content">
+          <form id="addForm">
+            <div class="modal-header">
+              <h4 class="modal-title">Add Employee</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
             </div>
-            <input
-            type="text"
-            maxlength="30"
-            class="form-control addFName reset-btn"
-            />
-            <div class="text-danger fname-warning" id="fnameError">
-            <small
-              >Invalid First Name (Only letters & spaces allowed)
-            </small>
-            </div>
-          </div>
-          <div class="col">
-            <div class="addFormLabel">
-            <label>Last Name</label>
-            <small class="text-danger lname-required">*</small>
-            </div>
-            <input
-            type="text"
-            maxlength="30"
-            class="form-control addLName reset-btn"
-            />
-            <div class="text-danger lname-warning" id="lnameError">
-            <small
-              >Invalid Last Name (Only letters & spaces allowed)
-            </small>
-            </div>
-          </div>
-          </div>
+            <div class="modal-body">
+              <div class="form-row">
+                <div class="col">
+                  <div class="addFormLabel">
+                    <label>First Name</label>
+                    <small class="text-danger fname-required">*</small>
+                  </div>
+                  <input
+                    type="text"
+                    maxlength="30"
+                    class="form-control addFName reset-btn"
+                  />
+                  <div class="text-danger fname-warning" id="fnameError">
+                    <small
+                      >Invalid First Name (Only letters & spaces allowed)
+                    </small>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="addFormLabel">
+                    <label>Last Name</label>
+                    <small class="text-danger lname-required">*</small>
+                  </div>
+                  <input
+                    type="text"
+                    maxlength="30"
+                    class="form-control addLName reset-btn"
+                  />
+                  <div class="text-danger lname-warning" id="lnameError">
+                    <small
+                      >Invalid Last Name (Only letters & spaces allowed)
+                    </small>
+                  </div>
+                </div>
+              </div>
 
-          <div class="addFormLabel">
-          <label>Email</label>
-          <small class="text-danger email-danger-text">*</small>
-          </div>
-          <input type="email" class="form-control addEmail reset-btn" />
-          <div class="text-danger email-danger-style" id="emailError">
-          <small>Invalid Email format (e.g., example@example.com)</small>
-          </div>
-          <div class="addFormLabel">
-          <label>Phone(Indian Number)</label>
-          <small class="text-danger phone-danger-text">*</small>
-          </div>
-          <div class="form-row">
-          <div class="col-2">
-            <input
-            type="text"
-            class="form-control"
-            value="+91"
-            readonly
-            />
-          </div>
-          <div class="col">
-            <input
-            type="text"
-            class="form-control addPhone reset-btn"
-            />
-          </div>
-          </div>
-          <div class="text-danger phone-danger-style" id="numberError">
+              <div class="addFormLabel">
+                <label>Email</label>
+                <small class="text-danger email-danger-text">*</small>
+              </div>
+              <input type="email" class="form-control addEmail reset-btn" />
+              <div class="text-danger email-danger-style" id="emailError">
+                <small>Invalid Email format (e.g., example@example.com)</small>
+              </div>
+              <div class="addFormLabel">
+                <label>Phone(Indian Number)</label>
+                <small class="text-danger phone-danger-text">*</small>
+              </div>
+              <div class="form-row">
+                <div class="col-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="+91"
+                    readonly
+                  />
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control addPhone reset-btn" />
+                </div>
+              </div>
+              <div class="text-danger phone-danger-style" id="numberError">
                 <small>Phone Number Should Be Of 10 Digits</small>
               </div>
 
@@ -283,7 +280,10 @@
               <div class="addFormLabel">
                 <label>Confirm Password</label>
                 <small class="text-danger confirmPasswordRequired">*</small>
-                <input type="new-password" class="form-control addConfirmPassword" />
+                <input
+                  type="new-password"
+                  class="form-control addConfirmPassword"
+                />
                 <div
                   class="text-danger confirm-password-warning"
                   id="companyWebsiteError"
