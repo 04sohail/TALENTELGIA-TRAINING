@@ -30,6 +30,20 @@
   </head>
 
   <body>
+    <!--LOADING SCREEN-->
+    <div class="fullScreen">
+      <div class="middle">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+      </div>
+    </div>
+
     <div class="container-fluid">
       <div class="table-responsive">
         <div class="table-wrapper">
@@ -49,7 +63,7 @@
               </div>
             </div>
           </div>
-          <table class="table table-striped table-hover">
+          <table class="table table-striped table-hover noUser">
             <thead>
               <tr>
                 <th>ID</th>
@@ -90,87 +104,146 @@
               </button>
             </div>
             <div class="modal-body">
-              <label>Name</label>
-              <input
-                type="text"
-                class="form-control addName is-invalid"
-                oninput="validateName(event)"
-                required
-              />
-              <div class="text-danger dangernamestyle" id="nameError">
-                <small>Invalid Name ! </small>
+              <div class="addFormLabel">
+                <label>Name</label>
+                <small class="text-danger name-danger-text">*</small>
               </div>
-              <label>Email</label>
-              <input
-                type="email"
-                class="form-control addEmail is-invalid"
-                oninput="validateEmail(event)"
-                required
-              />
-              <div class="text-danger dangeremailstyle" id="emailError">
-                <small>Invalid Email ! </small>
+              <input type="text" maxlength="30" class="form-control addName" />
+              <div class="text-danger name-danger-style" id="nameError">
+                <small>Only Alphabets Allowed</small>
               </div>
-              <label>Phone(Only Indian Number)</label>
-              <input
-                type="text"
-                class="form-control addPhone is-invalid"
-                oninput="validatePhone(event)"
-                required
-              />
-              <div class="text-danger dangerphonestyle" id="numberError">
-                <small> Invalid Number ! </small>
+
+              <div class="addFormLabel">
+                <label>Email</label>
+                <small class="text-danger email-danger-text">*</small>
               </div>
-              <label>Address</label>
+              <input type="email" class="form-control addEmail" />
+              <div class="text-danger email-danger-style" id="emailError">
+                <small>Invalid Email</small>
+              </div>
+              <div class="addFormLabel">
+                <label>Phone(Only Indian Number)</label>
+                <small class="text-danger phone-danger-text">*</small>
+              </div>
               <div class="form-row">
-                <div class="col">
+                <div class="col-2">
                   <input
                     type="text"
-                    class="form-control addHNumber is-invalid"
-                    oninput="validateHnumber(event)"
-                    placeholder="House Number"
-                    required
+                    class="form-control"
+                    value="+91"
+                    readonly
                   />
-                  <div class="text-danger dangerHNumber" id="HNumberError">
-                    <small> Invalid House Number</small>
-                  </div>
                 </div>
                 <div class="col">
                   <input
-                    type="text"
-                    class="form-control addStreet"
-                    placeholder="Street"
-                    required
+                    type="tel"
+                    inputmode="numeric"
+                    pattern="[0-9]"
+                    maxlength="10"
+                    class="form-control addPhone"
                   />
                 </div>
               </div>
-              <div class="form-row mt-2">
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control addCity"
-                    placeholder="City"
-                    required
-                  />
+              <div class="text-danger phone-danger-style" id="numberError">
+                <small>Number Should Be Of 10 Digits</small>
+              </div>
+
+              <div class="addFormLabel">
+                <label>Address </label><small class="text-danger HNumber-danger-text">*</small>
+                <div class="form-row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control addHNumber"
+                      placeholder="House-Number"
+                      maxlength="50"
+                    />
+                    <div
+                      class="text-danger HNumber-danger-style"
+                      id="HNumberError"
+                    >
+                      <small> Invalid House Number</small>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control addStreet"
+                      placeholder="Street"
+                    />
+                    <div
+                      class="text-danger street-danger-style"
+                      id="streetError"
+                    >
+                      <small> Invalid Street !!! </small>
+                    </div>
+                  </div>
                 </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control addZipcode is-invalid"
-                    placeholder="Zipcode"
-                    required
-                    oninput="validateZipcode(event)"
-                  />
-                  <div class="text-danger dangerzipcodestyle" id="ZipCodeError">
-                    <small>Invalid Zipcode</small>
+                <div class="form-row mt-2">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control addCity"
+                      placeholder="City"
+                    />
+                    <div class="text-danger city-danger-style" id="streetError">
+                      <small> Invalid City Name !!! </small>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control addPinCode"
+                      placeholder="Pin-Code"
+                    />
+                    <div
+                      class="text-danger pin-code-danger-style"
+                      id="pinCodeError"
+                    >
+                      <small>Only Numbers Allowed</small>
+                    </div>
                   </div>
                 </div>
               </div>
-              <label>Company Name</label>
-              <input type="text" class="form-control addCompName" required />
-              <label>Company Website</label>
-              <input type="text" class="form-control addCompWeb" required />
-              <label>Role</label>
-              <select class="form-control addRole" required>
+              <div class="addFormLabel">
+                <label>Company Name</label>
+                <small class="text-danger">*</small>
+                <input type="text" class="form-control addCompName" />
+                <div
+                  class="text-danger company-name-danger-style"
+                  id="companyNameError"
+                >
+                  <small>Only Alphabets Allowed</small>
+                </div>
+              </div>
+              <div class="addFormLabel">
+                <label>Company Website</label>
+                <small class="text-danger">*</small>
+                <input type="text" class="form-control addCompWeb" />
+                <div
+                  class="text-danger company-website-danger-style"
+                  id="companyWebsiteError"
+                >
+                  <small>Only Numbers Allowed</small>
+                </div>
+              </div>
+              <div class="addFormLabel">
+                <label>Password</label>
+                <small class="text-danger">*</small>
+                <input type="password" class="form-control addPassword" />
+                <div
+                  class="text-danger password-danger-style"
+                  id="companyWebsiteError"
+                >
+                  <small>Not a valid password</small>
+                </div>
+              </div>
+              <div class="addFormLabel">
+                <label>Role</label>
+                <small class="text-danger">*</small>
+              </div>
+              <select class="form-control addRole">
+                <option value="">Select Role</option>
                 <option value="admin">Admin</option>
                 <option value="super-admin">Super Admin</option>
                 <option value="customer">Customer</option>
@@ -183,7 +256,11 @@
                 data-dismiss="modal"
                 value="Cancel"
               />
-              <input type="submit" class="btn btn-success" value="Add" />
+              <input
+                type="submit"
+                class="btn btn-success submit-btn"
+                value="Add"
+              />
             </div>
           </form>
         </div>
@@ -211,33 +288,33 @@
               </button>
             </div>
             <div class="modal-body">
-              <label>Name</label>
-              <input
-                type="text"
-                class="form-control editName is-valid"
-                oninput="validateName(event)"
-                required
-              />
-              <label>Email</label>
-              <input
-                type="email"
-                class="form-control editEmail is-valid"
-                oninput="validateEmail(event)"
-                required
-              />
-              <label>Phone(Only Indian Number)</label>
-              <input
-                type="text"
-                class="form-control editPhone is-valid"
-                oninput="validatePhone(event)"
-                required
-              />
-              <label>Address</label>
+              <div class="editFormLabel"><label>Name</label></div>
+              <input type="text" class="form-control editName" required />
+              <div class="text-danger text-danger-style" id="nameError">
+                <small>Name Should Only Be In Alphabets</small>
+              </div>
+              <div class="editFormLabel"><label>Email</label></div>
+              <input type="email" class="form-control editEmail" required />
+
+              <div class="form-row">
+                <div class="col-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="+91"
+                    readonly
+                  />
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control editPhone" required />
+                </div>
+              </div>
+              <div class="editFormLabel"><label>Address</label></div>
               <div class="form-row">
                 <div class="col">
                   <input
                     type="text"
-                    class="form-control editHnumber is-valid"
+                    class="form-control editHnumber"
                     placeholder="House Number"
                     oninput="validateHnumber(event)"
                     required
@@ -264,18 +341,18 @@
                 <div class="col">
                   <input
                     type="text"
-                    class="form-control editZipcode is-valid"
+                    class="form-control editZipcode"
                     placeholder="Zipcode"
                     oninput="validateZipcode(event)"
                     required
                   />
                 </div>
               </div>
-              <label>Company Name</label>
+              <div class="editFormLabel"><label>Company Name</label></div>
               <input type="text" class="form-control editCompName" required />
-              <label>Company Website</label>
+              <div class="editFormLabel"><label>Company Website</label></div>
               <input type="text" class="form-control editCompWeb" required />
-              <label>Role</label>
+              <div class="editFormLabel"><label>Role</label></div>
               <select class="form-control editRole" required>
                 <option value="admin">Admin</option>
                 <option value="super-admin">Super Admin</option>
@@ -289,7 +366,11 @@
                 data-dismiss="modal"
                 value="Cancel"
               />
-              <input type="submit" class="btn btn-success" value="Update" />
+              <input
+                type="submit"
+                class="btn btn-success submit-btn"
+                value="Update"
+              />
             </div>
           </form>
         </div>
@@ -304,7 +385,7 @@
     >
       <div class="modal-dialog">
         <div class="modal-content">
-          <form onsubmit="handleDelete(event)">
+          <form id="deleteFormSubmit">
             <div class="modal-header">
               <h4 class="modal-title">Delete Employee</h4>
               <button
@@ -340,6 +421,10 @@
         </div>
       </div>
     </div>
-    <script src="../JS/script.js"></script>
+    <script src="../JS/script.js" type="module"></script>
+    <script src="../JS/validations.js" type="module"></script>
+    <script src="../network/api.js" type="module"></script>
+    <script src="../js/constants.js" type="module"></script>
+    <script src="../js/helping.js" type="module"></script>
   </body>
 </html>
