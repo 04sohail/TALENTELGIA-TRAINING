@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": "1740660783484",
+      "first_name": "Sk ",
+      "last_name": "Sohail",
+      "email": "Sksohail@gmail.com",
+      "phone": "7882828282",
+      "address": {
+        "hnumber": "123456",
+        "street": "Rekabibazar",
+        "city": "Jajpur town",
+        "pincode": "485004"
+      },
+      "company": {
+        "companyname": "Talentelgia",
+        "role": "super-admin",
+        "companywebsite": "talentelgia.com"
+      },
+      "password": "@Sksohail123"
+    },
+    {
+      "id": "1740672810065",
+      "first_name": "subham",
+      "last_name": "Bhal",
+      "email": "Subham@gmail.co",
+      "phone": "8779799797",
+      "address": {
+        "hnumber": "78787",
+        "street": "woeuuow",
+        "city": "owehiouwh",
+        "pincode": "878788"
+      },
+      "company": {
+        "companyname": "oweihgowi",
+        "role": "admin",
+        "companywebsite": "owiehgwoe.com"
+      },
+      "password": "@Subham123"
+    },
+    {
+      "id": "1740672851938",
+      "first_name": "pratyush",
+      "last_name": "jena",
+      "email": "pratyush@gmail.com",
+      "phone": "9849849879",
+      "address": {
+        "hnumber": "iwuehg",
+        "street": "WUEBG",
+        "city": "49494",
+        "pincode": "649494"
+      },
+      "company": {
+        "companyname": "OIEGBWOE",
+        "role": "customer",
+        "companywebsite": "OWIEHO.com"
+      },
+      "password": "@Jena1234"
+    }
+  ]
+}
