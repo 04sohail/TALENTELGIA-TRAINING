@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "id": "1740660783484",
+      "first_name": "Sk ",
+      "last_name": "Sohail",
+      "email": "Sksohail@gmail.com",
+      "phone": "7882828282",
+      "address": {
+        "hnumber": "123456",
+        "street": "Rekabibazar",
+        "city": "Jajpur town",
+        "pincode": "485004"
+      },
+      "company": {
+        "companyname": "Talentelgia",
+        "role": "super-admin",
+        "companywebsite": "talentelgia.com"
+      },
+      "password": "@Sksohail123"
+    },
+    {
+      "id": "1740672810065",
+      "first_name": "subham",
+      "last_name": "Bhalll",
+      "email": "Subham@gmail.co",
+      "phone": "8779799797",
+      "address": {
+        "hnumber": "78787",
+        "street": "woeuuow",
+        "city": "owehiouwh",
+        "pincode": "588888"
+      },
+      "company": {
+        "companyname": "oweihgowi",
+        "role": "admin",
+        "companywebsite": "owiehgwoe.com"
+      },
+      "password": "@Subham123"
+    },
+    {
+      "id": "1741207039897",
+      "first_name": "Quibusda",
+      "last_name": "Occaeca",
+      "email": "your.email+fakedata39259@gmail.com",
+      "phone": "7897897888",
+      "address": {
+        "hnumber": "368",
+        "street": "4364 Ibrahim Place",
+        "city": "Orange",
+        "pincode": "397898"
+      },
+      "company": {
+        "companyname": "ioaefowiefo",
+        "companywebsite": "owiebfoiwbefo.com",
+        "role": "customer"
+      },
+      "password": "@Sksaroo19111"
+    },
+    {
+      "id": "1741244272794",
+      "first_name": "Autem mag",
+      "last_name": "Eligendi ",
+      "email": "qwfqef",
+      "phone": "7897897898",
+      "address": {
+        "hnumber": "124",
+        "street": "784 Alexander Park",
+        "city": "Milford",
+        "pincode": "789789"
+      },
+      "company": {
+        "companyname": "oweubfo",
+        "companywebsite": "ouwbeofwef.com",
+        "role": "customer"
+      },
+      "password": "Sksohail@gmail.com1"
+    }
+  ]
+}

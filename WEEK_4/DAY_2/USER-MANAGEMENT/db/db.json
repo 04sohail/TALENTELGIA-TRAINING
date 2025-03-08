@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "id": "1740660783484",
+      "first_name": "Sk ",
+      "last_name": "Sohail",
+      "email": "Sksohail@gmail.com",
+      "phone": "7882828282",
+      "address": {
+        "hnumber": "123456",
+        "street": "Rekabibazar",
+        "city": "Jajpur town",
+        "pincode": "485004"
+      },
+      "company": {
+        "companyname": "Talentelgia",
+        "role": "super-admin",
+        "companywebsite": "talentelgia.com"
+      },
+      "password": "@Sksohail123"
+    },
+    {
+      "id": "1740672810065",
+      "first_name": "subham",
+      "last_name": "Bhalll2",
+      "email": "Subham@gmail.co",
+      "phone": "8779799797",
+      "address": {
+        "hnumber": "78787",
+        "street": "woeuuow",
+        "city": "owehiouwh",
+        "pincode": "5"
+      },
+      "company": {
+        "companyname": "oweihgowi",
+        "role": "admin",
+        "companywebsite": "owiehgwoe.com"
+      },
+      "password": "@Subham123"
+    },
+    {
+      "id": "1740672800000",
+      "first_name": "SKKK",
+      "last_name": "wefwe",
+      "email": "SOHAIL@gmail.co",
+      "phone": "8779799797",
+      "address": {
+        "hnumber": "78787",
+        "street": "woeuuow",
+        "city": "owehiouwh",
+        "pincode": "588888"
+      },
+      "company": {
+        "companyname": "oweihgowi",
+        "role": "customer",
+        "companywebsite": "owiehgwoe.com"
+      },
+      "password": "@Sohaillll123"
+    },
+    {
+      "id": "1741064122258",
+      "first_name": "Sk",
+      "last_name": "",
+      "email": "Sk@gmail.com",
+      "phone": "7788779988",
+      "address": {
+        "hnumber": "1234565",
+        "street": "obwieufbi",
+        "city": "iuwdbfiuweb",
+        "pincode": "875585"
+      },
+      "company": {
+        "companyname": "talentelgia",
+        "role": "customer",
+        "companywebsite": "talentelgia.com"
+      },
+      "password": "@Talent123"
+    },
+    {
+      "id": "1741112819260",
+      "first_name": "Corporis assumenda non autem d",
+      "last_name": "kievfiwvef",
+      "email": "your.email+fakedata34964@gmail.com",
+      "phone": "7878787878",
+      "address": {
+        "hnumber": "473",
+        "street": "682 Terrill Crescent",
+        "city": "McAllen",
+        "pincode": "208878"
+      },
+      "company": {
+        "companyname": "Consequuntur aspernatur ea voluptate eius ducimus iste autem.",
+        "role": "admin",
+        "companywebsite": "ousbfiwevbf.com"
+      },
+      "password": "@Javascript123"
+    },
+    {
+      "id": "1741113422192",
+      "first_name": "sk",
+      "last_name": "sohail",
+      "email": "your.email+fakedata53451@gmail.com",
+      "phone": "7897897898",
+      "address": {
+        "hnumber": "492",
+        "street": "84168 Ondricka Falls",
+        "city": "Spring Hill",
+        "pincode": "418789"
+      },
+      "company": {
+        "companyname": "Perferendis exercitationem assumenda dolorem dignissimos provident autem vitae.",
+        "role": "super-admin",
+        "companywebsite": "wubfiwebf.com"
+      },
+      "password": "@Javascript123"
+    }
+  ]
+}
