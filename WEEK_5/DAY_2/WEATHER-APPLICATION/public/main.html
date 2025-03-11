@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strom Bloom</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="../assets/img/logo.png" type="image/x-icon">
+</head>
+
+<body class="flex justify-center items-center min-h-screen p-4 bg-sky-200" id="body-element">
+  <img src="../assets/img/logo.png" class="absolute h-[60px] left-10 top-6">
+  <div class="bg-white rounded-lg p-6 w-full max-w-3xl theme-transition" id="main-container">
+    <!-- Top Controls -->
+    <div class="flex justify-between items-center mb-4">
+      <!-- Theme Toggle -->
+      <div class="flex items-center bg-sky-100 text-blue-900 rounded-full px-3 py-1 cursor-pointer theme-transition"
+        id="theme-toggle">
+        <div class="w-8 h-4 bg-sky-300 rounded-full relative">
+          <div class="w-4 h-4 bg-blue-900 rounded-full absolute right-0 transform transition-transform duration-300"
+            id="toggle-indicator"></div>
+        </div>
+        <span class="text-xs ml-2">Light Mode</span>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="flex-1 mx-4">
+        <input type="text" placeholder="Search for your preferred city..."
+          class="w-full px-4 py-2 rounded-full text-sm bg-white text-blue-900 border-none focus:outline-none placeholder-blue-400 theme-transition"
+          id="search-input">
+      </div>
+
+      <!-- User Profile -->
+      <div class="relative">
+        <img src="../assets/img/user-profile.png" alt="User Profile" class="w-10 h-10 rounded-full cursor-pointer"
+          id="user-profile">
+        <!-- Modal -->
+        <div id="profile-modal" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
+          <a href="#" class="block px-4 py-2 text-blue-900 hover:bg-sky-100">Profile</a>
+          <div class="relative group">
+            <a href="#" class="block px-4 py-2 text-blue-900 hover:bg-sky-100">Favorites</a>
+            <!-- Submenu -->
+            <div
+              class="hidden absolute left-full top-0 mt-0 w-40 bg-white rounded-lg shadow-lg py-2 group-hover:block group-focus:block z-10">
+              <a href="#" class="block px-4 py-2 text-blue-900 hover:bg-sky-100">Favorite 1</a>
+              <a href="#" class="block px-4 py-2 text-blue-900 hover:bg-sky-100">Favorite 2</a>
+              <a href="#" class="block px-4 py-2 text-blue-900 hover:bg-sky-100">Favorite 3</a>
+            </div>
+          </div>
+          <a href="#" class="block px-4 py-2 text-blue-900 hover:bg-sky-100">Logout</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Left Card: Time and Location -->
+      <div class="bg-sky-100 text-blue-900 rounded-lg p-4 card-shadow theme-transition" id="time-location-card">
+        <h2 class="text-xl font-bold mb-2">New York</h2>
+        <div class="text-6xl font-bold mb-1">14:25</div>
+        <div class="text-sm text-blue-600 theme-transition" id="date-text">Tuesday, 11 Mar</div>
+      </div>
+
+      <!-- Right Card: Current Weather -->
+      <div class="bg-sky-100 text-blue-900 rounded-lg p-4 flex card-shadow theme-transition" id="current-weather-card">
+        <div class="flex-1">
+          <div class="flex items-baseline">
+            <span class="text-6xl font-bold">18</span>
+            <span class="text-3xl">°C</span>
+          </div>
+          <div class="text-sm text-blue-600 mb-4 theme-transition" id="feels-like-text">Feels like: 16°C</div>
+
+          <div class="grid grid-cols-2 gap-2 text-sm">
+            <div>
+              <div class="font-bold">Sunrise</div>
+              <div>06:15 AM</div>
+            </div>
+            <div>
+              <div class="font-bold">Sunset</div>
+              <div>18:05 PM</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between text-right">
+          <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm mb-4">
+            <div class="text-right">
+              <div>45%</div>
+              <div class="text-blue-600 theme-transition secondary-text">Humidity</div>
+            </div>
+            <div class="text-right">
+              <div>5km/h</div>
+              <div class="text-blue-600 theme-transition secondary-text">Wind Speed</div>
+            </div>
+            <div class="text-right">
+              <div>1013hPa</div>
+              <div class="text-blue-600 theme-transition secondary-text">Pressure</div>
+            </div>
+            <div class="text-right">
+              <div>4</div>
+              <div class="text-blue-600 theme-transition secondary-text">UV</div>
+            </div>
+          </div>
+
+          <div class="text-xl font-bold">Partly Cloudy</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <!-- 5 Days Forecast -->
+      <div class="bg-sky-100 text-blue-900 rounded-lg p-4 card-shadow theme-transition" id="forecast-card">
+        <h3 class="text-lg font-bold mb-2">5 Days Forecast:</h3>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center">
+            <span>16°C</span>
+            <span class="text-blue-600 theme-transition secondary-text">Wednesday, 12 Mar</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span>19°C</span>
+            <span class="text-blue-600 theme-transition secondary-text">Thursday, 13 Mar</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span>21°C</span>
+            <span class="text-blue-600 theme-transition secondary-text">Friday, 14 Mar</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span>17°C</span>
+            <span class="text-blue-600 theme-transition secondary-text">Saturday, 15 Mar</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span>15°C</span>
+            <span class="text-blue-600 theme-transition secondary-text">Sunday, 16 Mar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hourly Forecast -->
+      <div class="bg-sky-100 text-blue-900 rounded-lg p-4 card-shadow theme-transition" id="hourly-card">
+        <h3 class="text-lg font-bold mb-2">Hourly Forecast:</h3>
+        <div class="grid grid-cols-5 gap-2">
+          <!-- 15:00 -->
+          <div class="bg-sky-300 rounded-lg p-2 text-center theme-transition hourly-item">
+            <div class="font-bold mb-1">15:00</div>
+            <div class="text-lg">18°C</div>
+            <div class="text-sm mt-4">6km/h</div>
+          </div>
+
+          <!-- 18:00 -->
+          <div class="bg-sky-300 rounded-lg p-2 text-center theme-transition hourly-item">
+            <div class="font-bold mb-1">18:00</div>
+            <div class="text-lg">17°C</div>
+            <div class="text-sm mt-4">4km/h</div>
+          </div>
+
+          <!-- 21:00 -->
+          <div class="bg-sky-400 rounded-lg p-2 text-center theme-transition hourly-item">
+            <div class="font-bold mb-1">21:00</div>
+            <div class="text-lg">15°C</div>
+            <div class="text-sm mt-4">3km/h</div>
+          </div>
+
+          <!-- 00:00 -->
+          <div class="bg-blue-500 rounded-lg p-2 text-center theme-transition hourly-item">
+            <div class="font-bold mb-1">00:00</div>
+            <div class="text-lg">13°C</div>
+            <div class="text-sm mt-4">2km/h</div>
+          </div>
+
+          <!-- 03:00 -->
+          <div class="bg-blue-500 text-white rounded-lg p-2 text-center theme-transition hourly-night">
+            <div class="font-bold mb-1">03:00</div>
+            <div class="text-lg">11°C</div>
+            <div class="text-sm mt-4">2km/h</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../dist/src/ts/main.js"></script>
+</body>
+
+</html>
