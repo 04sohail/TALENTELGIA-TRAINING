@@ -8,9 +8,9 @@ const App = () => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event?.preventDefault()
     const button = document.getElementById("password")
-    if((button?.getAttribute("type") == "text")){
+    if ((button?.getAttribute("type") == "text")) {
       document.getElementById("password")?.setAttribute("type", "password")
-    }else{
+    } else {
       document.getElementById("password")?.setAttribute("type", "text")
     }
   }
