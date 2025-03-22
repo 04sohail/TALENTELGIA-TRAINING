@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "id": "123123123",
+      "first_name": "Sk",
+      "last_name": "Sohail",
+      "email": "sk@gmail.com",
+      "password": "@Sk12345"
+    },
+    {
+      "id": "1742204623683",
+      "first_name": "Brendan",
+      "last_name": "Eich",
+      "email": "user1@gmail.com",
+      "password": "@User123"
+    },
+    {
+      "id": "1742286588252",
+      "first_name": "Brendaaaan",
+      "last_name": "Eichhhh",
+      "email": "your.email+fakedata25193@gmail.com",
+      "password": "zMMQjHXS8FYe5AR"
+    }
+  ],
+  "favourites": [
+    {
+      "id": "123123123",
+      "favourites": [
+        {
+          "city": "Dubai",
+          "coordinates": [
+            25.2653471,
+            55.2924914
+          ]
+        },
+        {
+          "city": "Tala Gang Tehsil",
+          "coordinates": [
+            33.0281858,
+            72.0575345
+          ]
+        },
+        {
+          "city": "Sahibzada Ajit Singh Nagar",
+          "coordinates": [
+            30.68113974231525,
+            76.7283264112015
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1742286588252",
+      "favourites": []
+    }
+  ]
+}
