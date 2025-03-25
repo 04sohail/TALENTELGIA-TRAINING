@@ -20,6 +20,13 @@
       "last_name": "Eichhhh",
       "email": "your.email+fakedata25193@gmail.com",
       "password": "zMMQjHXS8FYe5AR"
+    },
+    {
+      "id": "112211221122",
+      "email": "newUser@gmail.com",
+      "first_name": "new",
+      "last_name": "user",
+      "password": "@NewUser123"
     }
   ],
   "favourites": [
