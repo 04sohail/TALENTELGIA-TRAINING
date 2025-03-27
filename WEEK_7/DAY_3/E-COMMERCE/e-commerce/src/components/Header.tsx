@@ -1,31 +1,88 @@
-import React from 'react'
+import { useState } from 'react';
+import { ShoppingCart, User, LogOut, ChevronDown } from 'lucide-react';
 
 const Header = () => {
-  return (
-    <>
-      <header className="text-gray-600 body-font">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span className="ml-3 text-xl">Tailblocks</span>
-          </a>
-          <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-900">First Link</a>
-            <a className="mr-5 hover:text-gray-900">Second Link</a>
-            <a className="mr-5 hover:text-gray-900">Third Link</a>
-            <a className="mr-5 hover:text-gray-900">Fourth Link</a>
-          </nav>
-          <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
-      </header>
-    </>
-  )
-}
+  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
-export default Header
+  // Mock user data (replace with actual user context/state management)
+  const user = {
+    email: 'john.doe@example.com',
+    name: 'John Doe'
+  };
+
+  const handleLogout = () => {
+    // Implement logout logic here
+    console.log('Logging out');
+  };
+
+  return (
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+      <div className="container mx-auto flex justify-between items-center h-20 px-4">
+        {/* Logo Section */}
+        <div className="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full mr-3"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span className="text-xl font-bold text-gray-800">YourLogo</span>
+        </div>
+
+        {/* Right Side - Cart and Profile */}
+        <div className="flex items-center space-x-4">
+          {/* Cart Icon */}
+          <div className="relative">
+            <ShoppingCart
+              className="text-gray-600 hover:text-indigo-500 cursor-pointer"
+              size={24}
+            />
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+              0
+            </span>
+          </div>
+
+          {/* Profile Dropdown */}
+          <div
+            className="relative"
+            onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}
+          >
+            <div className="flex items-center cursor-pointer">
+              <User className="text-gray-600 hover:text-indigo-500" size={24} />
+              <ChevronDown className="ml-1 text-gray-500" size={16} />
+            </div>
+
+            {isProfileDropdownOpen && (
+              <div
+                className="absolute right-0 mt-2 w-64 bg-white border rounded-lg shadow-lg p-4"
+                // Stop click propagation to prevent closing the dropdown immediately
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="text-sm text-gray-600 mb-2">
+                  <p className="font-semibold">{user.name}</p>
+                  <p className="text-xs">{user.email}</p>
+                </div>
+                <hr className="my-2" />
+                <button
+                  onClick={handleLogout}
+                  className="w-full flex items-center text-left text-sm text-red-500 hover:bg-gray-100 p-2 rounded"
+                >
+                  <LogOut size={16} className="mr-2" />
+                  Logout
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
