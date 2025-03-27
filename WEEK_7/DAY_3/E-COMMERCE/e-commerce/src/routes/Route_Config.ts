@@ -1,6 +1,7 @@
 export const routesConfig = {
     login: '/',
-    signup:'sign_up',
+    signup: 'sign_up',
     landing: '/landing_page',
-    random:'*'
+    product_details: '/landing_page/product_details',
+    random: '*'
 };

@@ -1,6 +1,7 @@
+@import "tailwindcss";
+
+
 * {
-    margin: 0;
-    padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -21,10 +22,6 @@
     align-items: center;
 }
 
-.wrapper p {
-    font-size: 0.85rem;
-    margin-top: 1rem;
-}
 
 .form {
     padding: 1.5rem;
@@ -128,4 +125,8 @@ button:hover {
 
 button:active {
     transform: scale(0.98);
+}
+
+.form-error {
+    color: red;
 }
