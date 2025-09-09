@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": "3c17",
+      "UId": "1740660783484",
+      "first_name": "Sk ",
+      "last_name": "Sohail",
+      "email": "Sksohail@gmail.com",
+      "phone": "7882828282",
+      "address": {
+        "hnumber": "123456",
+        "street": "Rekabibazar",
+        "city": "Jajpur town",
+        "pincode": "485004"
+      },
+      "company": {
+        "companyname": "Talentelgia",
+        "role": "super-admin",
+        "companywebsite": "talentelgia.com"
+      },
+      "password": "@Sksohail123"
+    },
+    {
+      "id": "969c",
+      "UId": "1740672810065",
+      "first_name": "subham",
+      "last_name": "Bhal",
+      "email": "Subham@gmail.co",
+      "phone": "8779799797",
+      "address": {
+        "hnumber": "78787",
+        "street": "woeuuow",
+        "city": "owehiouwh",
+        "pincode": "878788"
+      },
+      "company": {
+        "companyname": "oweihgowi",
+        "role": "admin",
+        "companywebsite": "owiehgwoe.com"
+      },
+      "password": "@Subham123"
+    },
+    {
+      "id": "19e0",
+      "UId": "1742473636091",
+      "first_name": "Brendan",
+      "last_name": "Eich",
+      "email": "Sksohail@gmail.com",
+      "phone": "7897897898",
+      "address": {
+        "hnumber": "789456",
+        "street": "Puri",
+        "city": "Puri",
+        "pincode": "798456"
+      },
+      "company": {
+        "companyname": "Talent.com",
+        "role": "customer",
+        "companywebsite": "Talent.com"
+      },
+      "password": "@Sksohail12333"
+    }
+  ]
+}
